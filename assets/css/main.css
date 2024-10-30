@@ -7382,7 +7382,7 @@ input, select, textarea {
 		/* Add a red background color to navbar links on hover */
 	.navbar a:hover, .dropdown:hover .dropbtn {
 	  background-color: #eceff1;
-	  color: #5F4690;
+	  color: #34A9C7;
 	}
 
 		/* Dropdown content (hidden by default) */
@@ -7417,7 +7417,7 @@ input, select, textarea {
 
 	.menublock {
 	  	height: 50px;
-	 	color: #5F4690;
+	 	color: #34A9C7;
 	}
 
 	@media screen and (max-width: 895px) { 
@@ -7441,7 +7441,7 @@ input, select, textarea {
 		#hambagaMenu {        
 			display: block;        
 			width: 100%;       
-			background: #5F4690;        
+			background: #34A9C7;        
 			padding: 1em;        
 			position: fixed;        
 			top: 0;        
@@ -7492,7 +7492,7 @@ input, select, textarea {
 	#hambagaMenu #menuToggle input:checked ~ span{  
 		opacity: 1;  
 		transform: rotate(45deg) translate(-2px, -1px);  
-		background: #5F4690;
+		background: #34A9C7;
 	}
 	/* * But let's hide the middle one. */ 
 	#hambagaMenu #menuToggle input:checked ~ span:nth-last-child(3){  
@@ -7538,7 +7538,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #5F4690;
+		background: #34A9C7;
 		cursor: default;
 		position: fixed;
 		top: 0;
