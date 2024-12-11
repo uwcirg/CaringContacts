@@ -49,6 +49,9 @@
 			  right: 10px;
 			  z-index: 1;
 			}
+			.interactive {
+				border: 1em;
+			}
 		</style>
 		<script type="text/javascript">
 			function toggle_visibility(id) {
@@ -57,7 +60,25 @@
 					e.style.display = 'none';
 				else
 					e.style.display = 'block';
-				}	
+				}
+
+				/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			  var myDropdown = document.getElementById("myDropdown");
+			    if (myDropdown.classList.contains('show')) {
+			      myDropdown.classList.remove('show');
+			    }
+			  }
+			}
+				
+		</script>	
 		</script>
 	</head>
 	<body class="is-preload">
@@ -129,7 +150,7 @@
 					<section class="wrapper style1 content-align-left">
 						<div class="inner">
 							<h2 id="number">Non-demanding Caring Contacts Number and Timing</h2>
-							<p>One of your first decisions is<mark> how many messages do you want to send, how often do you want to send the messages, and for how long</mark>. These are your choices. You may want to review different approaches to messages and different message content at the VA/DoD Clinical Practice Guidelines for Caring Contacts website (https://mirecc.va.gov/MIRECC/visn19/cpg/recs/13/) In addition, we can provide you with sample lists of messages of different content, frequency, and duration to help you decide. To prevent messages from being perceived by recipients as automated or “spammy,” you may want to send the messages at varying times of day and at varying intervals between messages rather than a set day and time. </p>
+							<p>One of your first decisions is<mark style="background-color: Pink;"> how many messages do you want to send, how often do you want to send the messages, and for how long</mark>. These are your choices. You may want to review different approaches to messages and different message content at the VA/DoD Clinical Practice Guidelines for Caring Contacts website (https://mirecc.va.gov/MIRECC/visn19/cpg/recs/13/) In addition, we can provide you with sample lists of messages of different content, frequency, and duration to help you decide. To prevent messages from being perceived by recipients as automated or “spammy,” you may want to send the messages at varying times of day and at varying intervals between messages rather than a set day and time. </p>
 							<h2>Principles of Non-demanding Caring Contact Message Content</h2>
 							<p>You should develop your own messages to ensure that they appropriately reflect and respect your local culture(s) and context(s). Here are some thoughts to consider:</p> 
 							<ul>
@@ -137,6 +158,20 @@
 								<li>Similarly, appointment reminders can often be a distraction from the Caring Contacts message and a reminder of something they don’t want to or have to do.</li>
 								<li>It can seem like another simple message conveying welcome, support, or care that doesn’t expect or demand anything from the recipient is not enough. We have found authors often feel compelled to make their messages longer or “more meaningful” in some way, but it is not clear that doing so makes for a better message.</li>
 							</ul>
+							
+								
+							<a onclick="toggle_visibility('setting');" href="#setting" class="button fit small"> See Message Examples
+							</a>
+
+							<p id="setting" style="padding: 1em; display: block; background-color: pink;">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>	
+								
 							<p>Here are some ideas that we have found helpful in crafting Caring Contacts</p>
 							<ul>
 								<li>The general approach in Caring contacts is to welcome and invite replies to messages but not to expect or demand this – so you may want to include comments such as, “if you would like to respond, I’d be happy to hear from you” or equivalent in your CarePlan.</li>
@@ -148,7 +183,7 @@
 							<p>Review all of the dates and times of the messages on the CarePlan to be sure that they fall on the days and time windows your Caring Contacts team wants them to be sent. </p>
 							<ul>
 								<li>Time and date CAN be edited for any message to individualize it for a recipient’s needs (e.g., they work nights and you know they never wake up before noon). Be sure to save the changes by clicking the “DONE” button at the bottom of the screen.</li>
-								<li>IMPORTANT: Please make sure that all of the messages are delivered within the 3 months following the beginning of the recipient’s CarePlan. </li>
+								<li><mark style="background-color: Pink;">IMPORTANT: Please make sure that all of the messages are delivered within the 3 months following the beginning of the recipient’s CarePlan. </mark></li>
 							</ul>
 							<p>Remember that we want the messages to appear as if they are sent by your team and come across as natural as possible. Avoid having all of your messages come on the same day or time each week as this can look like spam.</p>
 							<p>Important reminders:</p>
