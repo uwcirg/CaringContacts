@@ -7446,7 +7446,7 @@ input, select, textarea {
 			position: fixed;        
 			top: 0;        
 			left: 0;        
-			z-index: 100;    
+			z-index: 600;    
 			
 		}
 	}
@@ -7895,10 +7895,166 @@ input, select, textarea {
 		}
 
 /* Items (transitions) */
+/* Sidebar3 */
+
+
+#sidebar3 {
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -moz-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  -moz-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
+  -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
+  -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
+  transition: margin-left 0.5s ease, box-shadow 0.5s ease;
+  background-color: #f5f6f7;
+  font-size: 0.9em;
+  position: relative;
+  width: 26em; }
+  #sidebar3 h2 {
+    font-size: 1.38889em; }
+  #sidebar3 > .inner {
+    padding: 2.22222em 2.22222em 2.44444em 2.22222em ;
+    position: relative;
+    width: 26em; }
+    #sidebar3 > .inner > * {
+      border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+      margin: 0 0 3.5em 0;
+      padding: 0 0 3.5em 0; }
+      #sidebar3 > .inner > * > :last-child {
+        margin-bottom: 0; }
+      #sidebar3 > .inner > *:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+    #sidebar3 > .inner > .alt {
+      background-color: #eff1f2;
+      border-bottom: 0;
+      margin: -2.22222em 0 4.44444em -2.22222em;
+      padding: 2.22222em;
+      width: calc(100% + 4.44444em); }
+  #sidebar3 .toggle {
+    text-decoration: none;
+    -moz-transition: left 0.5s ease;
+    -webkit-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border: 0;
+    display: block;
+    height: 7.5em;
+    left: 26em;
+    line-height: 7.5em;
+    outline: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-indent: -15em;
+    white-space: nowrap;
+    top: 0;
+    width: 6em;
+    z-index: 10000; }
+    #sidebar3 .toggle:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      text-transform: none !important;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900; }
+    #sidebar3 .toggle:before {
+      content: '\f0c9';
+      font-size: 2rem;
+      height: inherit;
+      left: 0;
+      line-height: inherit;
+      position: absolute;
+      text-indent: 0;
+      top: 0;
+      width: inherit; }
+  #sidebar3.inactive {
+    margin-left: -26em; }
+  @media screen and (max-width: 1680px) {
+    #sidebar3 {
+      width: 24em; }
+      #sidebar3 > .inner {
+        padding: 1.66667em 1.66667em 1.33333em 1.66667em ;
+        width: 24em; }
+        #sidebar3 > .inner > .alt {
+          margin: -1.66667em 0 3.33333em -1.66667em;
+          padding: 1.66667em;
+          width: calc(100% + 3.33333em); }
+      #sidebar3 .toggle {
+        height: 6.25em;
+        left: 24em;
+        line-height: 6.25em;
+        text-indent: 5em;
+        width: 5em; }
+        #sidebar3 .toggle:before {
+          font-size: 1.5rem; }
+      #sidebar3.inactive {
+        margin-left: -24em; } }
+  @media screen and (max-width: 1280px) {
+    #sidebar3 {
+      box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      z-index: 10000; }
+      #sidebar3.inactive {
+        box-shadow: none; }
+      #sidebar3 > .inner {
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        top: 0; }
+        #sidebar3 > .inner:after {
+          content: '';
+          display: block;
+          height: 4em;
+          width: 100%; }
+      #sidebar3 .toggle {
+        text-indent: 6em;
+        width: 6em; }
+        #sidebar3 .toggle:before {
+          font-size: 1.5rem;
+          margin-left: -0.4375em; }
+      body.is-preload #sidebar {
+        display: none; } }
+  @media screen and (max-width: 736px) {
+    #sidebar3 .toggle {
+      text-indent: 7.25em;
+      width: 7.25em; }
+      #sidebar3 .toggle:before {
+        color: #7f888f;
+        margin-left: -0.0625em;
+        margin-top: -0.25em;
+        font-size: 1.1rem;
+        z-index: 1; }
+      #sidebar3 .toggle:after {
+        background: rgba(222, 225, 226, 0.75);
+        border-radius: 0.375em;
+        content: '';
+        height: 3.5em;
+        left: 1em;
+        position: absolute;
+        top: 1em;
+        width: 5em; } }
 /* Sidebar2 */
 
 	#sidebar2 {
-		padding: 2.5em 2.5em 0.5em 2.5em ;
+		padding: 4.5em 1em 0.5em 1em ;
 		background: #512DA8;
 		cursor: default;
 		height: 100vh;
@@ -7906,10 +8062,10 @@ input, select, textarea {
 		overflow-x: hidden;
 		overflow-y: auto;
 		position: fixed;
-		text-align: right;
+		text-align: left;
 		top: 0;
-		width: 12em;
-		z-index: 1000;
+		width: 20%;
+		z-index: 500;
 	}
 
 		#sidebar2 > .inner {
@@ -7956,7 +8112,7 @@ input, select, textarea {
 				-webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
 				-ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
 				transition: opacity 0.15s ease, transform 0.75s ease;
-				margin: 1.5em 0 0 0;
+				margin: 0 0 0 0;
 				opacity: 1;
 				padding: 0;
 				position: relative;
@@ -8112,17 +8268,17 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.55);
+			color: rgba(255, 255, 255, 1);
 			display: block;
-			font-size: 0.7em;
+			font-size: 0.65em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
-			line-height: 1.75;
+			/*line-height: 1.75;*/
 			outline: 0;
-			padding: 1.35em 0;
+			padding: 0.25em 0;
 			position: relative;
 			text-decoration: none;
-			text-transform: uppercase;
+			/*text-transform: uppercase;*/
 		}
 
 			#sidebar2 nav a:before, #sidebar2 nav a:after {
