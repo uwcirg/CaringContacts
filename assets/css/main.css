@@ -2898,8 +2898,8 @@ input, select, textarea {
 
 	header p {
 		position: relative;
-		margin: -0.65rem 0 1.5rem 0;
-		font-style: italic;
+		margin: 0rem 1rem 1.5rem 1rem;
+		/*font-style: italic;*/
 	}
 
 	header h1 + p {
