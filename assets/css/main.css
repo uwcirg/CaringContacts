@@ -2918,6 +2918,11 @@ input, select, textarea {
 	header h5 + p,
 	header h6 + p {
 		font-size: 0.9rem;
+
+	}
+	header h4 {
+		margin: 0rem 1rem 0rem 0rem;
+
 	}
 
 	header p {
